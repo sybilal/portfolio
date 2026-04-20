@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <header className={isDark ? `${styles.dark_menu} ${styles.header}` : styles.header}>
-      <a href="/" className={styles.logo}>
+      <a href="/portfolio" className={styles.logo}>
         <span className={styles.grey_color}> &lt;</span>
         <span className={styles.logo_name}>{greeting.username}</span>
         <span className={styles.grey_color}>/&gt;</span>
