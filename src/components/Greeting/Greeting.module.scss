@@ -6,7 +6,12 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
-
+.greet_main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
 
 .greeting_main {
   display: flex;
@@ -20,7 +25,7 @@
   display: flex;
 }
 
-.greeting_main>* {
+.greeting_main > * {
   flex: 1;
   margin-bottom: 30px;
 }
@@ -33,7 +38,6 @@
   display: flex;
   margin-top: 40px;
 }
-
 .download_link_button {
   text-decoration: none;
 }
@@ -48,7 +52,7 @@
   line-height: 40px;
 }
 
-.greeting_image_div>img {
+.greeting_image_div > img {
   max-width: 100%;
   height: auto;
 }
@@ -65,27 +69,21 @@
   0% {
     transform: rotate(0deg);
   }
-
   10% {
     transform: rotate(-10deg);
   }
-
   20% {
     transform: rotate(12deg);
   }
-
   30% {
     transform: rotate(-10deg);
   }
-
   40% {
     transform: rotate(9deg);
   }
-
   50% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
@@ -96,32 +94,26 @@
   .greeting_text {
     font-size: 50px;
   }
-
   .greeting_text_p {
     font-size: 20px;
   }
 }
-
 @media (max-width: 768px) {
   .button_greeting_div {
     justify-content: space-around;
   }
-
   .greeting_text {
     font-size: 30px;
     text-align: center;
   }
-
   .greeting_text_p {
     font-size: 16px;
     line-height: normal;
     text-align: center;
   }
-
   .greeting_main {
     display: block;
   }
-
   .greeting_image_div {
     height: 256px;
   }
