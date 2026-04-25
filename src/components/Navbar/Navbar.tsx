@@ -29,7 +29,6 @@ export default function Navbar() {
           <span className={styles.logoIcon}>S</span>
           Syed Bilal Ahmed
         </NavLink>
-
         <div className={styles.navLinks}>
           {navItems.map((item) => (
             <NavLink
