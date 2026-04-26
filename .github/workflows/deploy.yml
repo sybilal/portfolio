@@ -34,9 +34,13 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v6
         with:
-          node-version: lts/*
+          node-version: 24
           cache: 'npm'
-           # cache-dependency-path: package-lock.json
+          cache-dependency-path: package-lock.json
+      - name: Show tool versions
+        run: |
+          node --version
+          npm --version
       - name: Install dependencies
         run: npm ci # --force to fix peer dependency issues
       - name: Build
