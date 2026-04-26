@@ -24,7 +24,7 @@ const coreSkills = [
 
 export default function Skills() {
   return (
-    <div className={styles.page}>
+    <div id="skills" className={styles.page}>
       <div className={styles.container}>
 
         {/* ── Skills Grid ──────────────────────────────────── */}
@@ -80,7 +80,7 @@ export default function Skills() {
             />
             <div className={styles.eduGrid}>
               <GlassCard className={styles.eduCard}>
-                <h3 className={styles.eduDegree}>B.Sc. Computer Science</h3>
+                <h3 className={styles.eduDegree}>Bachelor of Science in Computer Science</h3>
                 <span className={styles.eduSchool}>Bahria University — Karachi, Pakistan</span>
                 <span className={styles.eduPeriod}>2017</span>
                 <p className={styles.eduDesc}>Thesis: Big Data Analytics in Healthcare</p>
@@ -98,6 +98,6 @@ export default function Skills() {
           </section>
         </AnimatedSection>
       </div>
-    </div>
+    </div >
   );
 }

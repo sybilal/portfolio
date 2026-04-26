@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router';
 import styles from './Navbar.module.scss';
 
 const navItems = [
-  { label: 'Home', path: '/' },
-  { label: 'Experience', path: '/experience' },
-  { label: 'Skills', path: '/skills' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Home', path: 'intro' },
+  { label: 'Experience', path: 'experience' },
+  { label: 'Skills', path: 'skills' },
+  { label: 'Contact', path: 'contact' },
 ];
 
 export default function Navbar() {
@@ -25,21 +25,20 @@ export default function Navbar() {
   return (
     <>
       <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-        <NavLink to="/" className={styles.logo}>
-          <span className={styles.logoIcon}>S</span>
-          Syed Bilal Ahmed
-        </NavLink>
+        <a href="https://github.com/sybilal" className={styles.logo}>
+          {/* <span className={styles.logoIcon}>S</span> */}
+          sybilal.github.io
+        </a>
         <div className={styles.navLinks}>
           {navItems.map((item) => (
-            <NavLink
+
+            <a
               key={item.path}
-              to={item.path}
-              className={({ isActive }) =>
-                `${styles.navLink} ${isActive ? styles.active : ''}`
-              }
+              href={`#${item.path}`}
+              className={styles.navLink}
             >
               {item.label}
-            </NavLink>
+            </a>
           ))}
         </div>
 
@@ -59,15 +58,21 @@ export default function Navbar() {
 
       <div className={`${styles.mobileMenu} ${mobileOpen ? styles.open : ''}`}>
         {navItems.map((item) => (
-          <NavLink
+          <a
             key={item.path}
-            to={item.path}
-            className={({ isActive }) =>
-              `${styles.navLink} ${isActive ? styles.active : ''}`
-            }
-          >
+            href={`#${item.path}`}
+            className={styles.navLink}>
             {item.label}
-          </NavLink>
+          </a>
+          // <NavLink
+          //   key={item.path}
+          //   to={item.path}
+          //   className={({ isActive }) =>
+          //     `${styles.navLink} ${isActive ? styles.active : ''}`
+          //   }
+          // >
+          //   {item.label}
+          // </NavLink>
         ))}
       </div>
     </>

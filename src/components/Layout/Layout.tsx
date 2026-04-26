@@ -1,7 +1,11 @@
 import { useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router';
-import Navbar from '../Navbar';
+import { useLocation } from 'react-router';
+import Contact from '../../pages/Contact';
+import Experience from '../../pages/Experience';
+import Home from '../../pages/Home';
+import Skills from '../../pages/Skills';
 import Footer from '../Footer';
+import Navbar from '../Navbar';
 import ScrollProgress from '../ScrollProgress';
 import styles from './Layout.module.scss';
 
@@ -19,7 +23,11 @@ export default function Layout() {
       <Navbar />
       <main className={styles.main} key={pathname}>
         <div className={styles.pageTransition}>
-          <Outlet />
+          <Home />
+          <Experience />
+          <Skills />
+          <Contact />
+          {/* <Outlet /> */}
         </div>
       </main>
       <Footer />

@@ -21,7 +21,7 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 59px;
     bottom: 0;
     width: 2px;
     background: $color-surface-container-highest;
@@ -34,8 +34,8 @@
   &::before {
     content: '';
     position: absolute;
-    left: -($stack-lg + $stack-md + 1px);
-    top: $stack-lg;
+    left: -($stack-lg + $stack-md + 5px);
+    top: $stack-lg + 18px;
     width: 12px;
     height: 12px;
     border-radius: 50%;

@@ -72,9 +72,9 @@ const experiences = [
   },
 ];
 
-export default function Experience() {
+const Experience = () => {
   return (
-    <div className={styles.page}>
+    <div id="experience" className={styles.page}>
       <div className={styles.container}>
         <AnimatedSection>
           <SectionHeader
@@ -129,3 +129,5 @@ export default function Experience() {
     </div>
   );
 }
+
+export default Experience;

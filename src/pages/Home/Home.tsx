@@ -61,9 +61,9 @@ const projects = [
   },
 ];
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.page}>
+    <div id="intro" className={styles.page}>
       {/* ── Hero ───────────────────────────────────────────── */}
       <section className={styles.hero}>
         <div className={styles.heroGlow} />
@@ -75,7 +75,7 @@ export default function Home() {
           Syed Bilal Ahmed
           <br />
           <span className={styles.heroHighlight}>
-            Building Scalable Web Systems
+            Building Scalable Web Apps
           </span>
         </h1>
 
@@ -164,3 +164,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

@@ -59,7 +59,7 @@ input, textarea {
   height: 2px;
   background: linear-gradient(90deg, $indigo, $cyan);
   z-index: 9999;
-  transition: width 100ms linear;
+  transition: width 300ms ease-in-out;
 }
 
 // ── Keyframes ───────────────────────────────────────────────
